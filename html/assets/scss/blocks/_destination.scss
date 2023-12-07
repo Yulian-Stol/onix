@@ -1,0 +1,33 @@
+.destination-tabs {
+  &__title {
+    display: flex;
+    text-align: center;
+    margin-bottom: 100px;
+    overflow: scroll;
+
+    @media (min-width: $breakpoint-md) {
+      overflow: auto;
+    }
+
+    li {
+      flex: 1;
+      padding: 10px;
+      border: 2px solid #c4c4c4;
+      background: var(--color-white);
+      font-size: 24px;
+      font-weight: 700;
+      cursor: pointer;
+      flex-shrink: 0;
+      text-wrap: nowrap;
+
+      @media (min-width: $breakpoint-lg) {
+        padding: 30px 10px;
+      }
+
+      &.active {
+        background: var(--color-primary-100);
+        color: var(--color-white);
+      }
+    }
+  }
+}

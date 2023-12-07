@@ -1,0 +1,78 @@
+.posts {
+  padding-left: 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @media (min-width: $breakpoint-md) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    padding-left: 40px;
+  }
+
+  &__item {
+    background: var(--color-white);
+    box-shadow: 1px 1px 10px #00000010;
+    display: flex;
+    flex-direction: column;
+
+    &-inner {
+      padding: 10px 25px 30px 25px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+    }
+
+    &:first-child {
+      grid-column: span 2;
+      margin-bottom: 20px;
+    }
+
+    &-img {
+      img {
+        width: 100%;
+      }
+    }
+
+    &-title,
+    &-description {
+      margin-bottom: 15px;
+    }
+
+    &-description {
+      font-size: 24px;
+      font-weight: 500;
+    }
+
+    &-date {
+      margin-bottom: 15px;
+      position: relative;
+      font-size: 18px;
+      font-weight: 500;
+
+      &::after {
+        content: "";
+        display: block;
+        height: 32px;
+        width: 6px;
+        background: var(--color-secondary-100);
+        position: absolute;
+        left: -25px;
+        top: -3px;
+      }
+    }
+
+    &-bottom {
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+      font-size: 18px;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+// Import fonts
+@mixin font($f-name, $f-style, $f-weight, $f-url) {
+  @font-face {
+    font-family: #{$f-name};
+    font-style: #{$f-style};
+    font-weight: #{$f-weight};
+    src:
+      url("#{$f-url}.woff2") format("woff2"),
+      url("#{$f-url}.woff") format("woff");
+    font-display: swap;
+  }
+}
+
+@include font("Inter", normal, 600, "../fonts/Inter-SemiBold");
+@include font("Inter", normal, 700, "../fonts/Inter-Bold");
+@include font("Quicksand", normal, 400, "../fonts/Quicksand-Regular");
+@include font("Quicksand", normal, 500, "../fonts/Quicksand-Medium");
+@include font("Quicksand", normal, 600, "../fonts/Quicksand-SemiBold");
+@include font("Quicksand", normal, 700, "../fonts/Quicksand-Bold");

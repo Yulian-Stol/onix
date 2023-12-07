@@ -1,0 +1,89 @@
+// Styles for divs
+.justify-center {
+  justify-content: center !important;
+}
+
+.align-center {
+  align-items: center !important;
+}
+
+.row-reverse {
+  flex-direction: row-reverse;
+}
+
+// Display from / to
+.d {
+  &-from {
+    &--sm {
+      display: none !important;
+
+      @media only screen and (min-width: $breakpoint-sm) {
+        display: block !important;
+      }
+    }
+
+    &--md {
+      display: none !important;
+
+      @media only screen and (min-width: $breakpoint-md) {
+        display: block !important;
+      }
+    }
+
+    &--lg {
+      display: none !important;
+
+      @media only screen and (min-width: $breakpoint-lg) {
+        display: block !important;
+      }
+    }
+
+    &--xl {
+      display: none !important;
+
+      @media only screen and (min-width: $breakpoint-xl) {
+        display: block !important;
+      }
+    }
+
+    &--xxl {
+      display: none !important;
+
+      @media only screen and (min-width: $breakpoint-xxl) {
+        display: block !important;
+      }
+    }
+  }
+
+  &-to {
+    &--sm {
+      @media only screen and (min-width: $breakpoint-sm) {
+        display: none !important;
+      }
+    }
+
+    &--md {
+      @media only screen and (min-width: $breakpoint-md) {
+        display: none !important;
+      }
+    }
+
+    &--lg {
+      @media only screen and (min-width: $breakpoint-lg) {
+        display: none !important;
+      }
+    }
+
+    &--xl {
+      @media only screen and (min-width: $breakpoint-xl) {
+        display: none !important;
+      }
+    }
+
+    &--xxl {
+      @media only screen and (min-width: $breakpoint-xxl) {
+        display: none !important;
+      }
+    }
+  }
+}

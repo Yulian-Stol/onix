@@ -1,0 +1,17 @@
+body {
+  display: flex;
+  flex-direction: column;
+  color: var(--color-base-100);
+  font-family: $Quicksand;
+}
+
+main {
+  flex: 1;
+}
+
+p {
+  .highlighted {
+    color: var(--color-secondary-100);
+  }
+}
+

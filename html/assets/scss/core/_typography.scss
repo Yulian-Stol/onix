@@ -1,0 +1,85 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+h1,
+.h1 {
+  font-size: 34px;
+  font-weight: 800;
+  line-height: 1.4;
+  font-family: $Inter;
+
+  @media screen and (min-width: $breakpoint-md) {
+    font-size: 64px;
+  }
+}
+
+h2,
+.h2 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.2;
+  font-family: $Inter;
+
+  @media screen and (min-width: $breakpoint-md) {
+    font-size: 50px;
+  }
+}
+
+h3,
+.h3 {
+  font-size: 25px;
+  font-weight: 700;
+
+  @media screen and (min-width: $breakpoint-md) {
+    font-size: 30px;
+  }
+}
+
+h4,
+.h4 {
+  font-size: 24px;
+  font-weight: 600;
+
+  @media screen and (min-width: $breakpoint-md) {
+    font-size: 28px;
+  }
+}
+
+h5,
+.h5 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.25;
+
+  @media screen and (min-width: $breakpoint-md) {
+    font-size: 24px;
+  }
+}
+
+h6,
+.h6 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+h1,
+h2 {
+  .highlighted {
+    color: var(--color-secondary-100);
+  }
+}
+
+h3 {
+  .highlighted {
+    color: var(--color-secondary-100);
+    background: var(--color-secondary-100-15);
+    padding: 0 3px;
+  }
+}

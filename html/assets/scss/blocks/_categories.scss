@@ -1,0 +1,26 @@
+.categories {
+  padding: 20px 40px 50px;
+  background-color: var(--color-white);
+  margin-bottom: 40px;
+  box-shadow: 1px 1px 10px #00000010;
+
+  &__title {
+    margin-bottom: 65px;
+    text-align: center;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    li {
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+      width: 100%;
+      font-size: 24px;
+      font-weight: 500;
+    }
+  }
+}
